@@ -7,7 +7,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 //Class with API conexion
-public class ConsumoAPI {
+public class ConsumeAPI {
 
     public String obtenerDatos(String url){
         HttpClient client = HttpClient.newHttpClient();

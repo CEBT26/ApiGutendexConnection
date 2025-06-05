@@ -1,16 +1,20 @@
 package com.aluraCursos.proyecto1_API.librosAPI.Principal;
 
-import com.aluraCursos.proyecto1_API.librosAPI.ConsumoAPI.ConsumoAPI;
+import com.aluraCursos.proyecto1_API.librosAPI.ConsumoAPI.ConsumeAPI;
+import com.aluraCursos.proyecto1_API.librosAPI.ConsumoAPI.DataConverter;
+import com.aluraCursos.proyecto1_API.librosAPI.model.BooksInformation;
 
 public class Principal {
+    private ConsumeAPI consumeAPI = new ConsumeAPI();
+    private DataConverter dataConverter = new DataConverter();
 
     public void informationBooks()
     {
-        ConsumoAPI consumoApi = new ConsumoAPI();
-
-        var json = consumoApi.obtenerDatos("https://gutendex.com/books/");
+        var json = consumeAPI.obtenerDatos("https://gutendex.com/books/");
         System.out.println(json);
 
+        //var dataConverter = dataConverter.dataJson(json, BooksInformation.class);
+        //System.out.println(dataConverter);
 
     }
 
