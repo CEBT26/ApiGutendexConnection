@@ -1,4 +1,4 @@
-package Principal;
+package com.aluraCursos.proyecto1_API.librosAPI.Principal;
 
 import com.aluraCursos.proyecto1_API.librosAPI.ConsumoAPI.ConsumoAPI;
 
