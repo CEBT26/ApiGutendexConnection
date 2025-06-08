@@ -1,7 +1,6 @@
 package com.aluraCursos.proyecto1_API.librosAPI;
 
-import Principal.Principal;
-import com.aluraCursos.proyecto1_API.librosAPI.ConsumoAPI.ConsumoAPI;
+import com.aluraCursos.proyecto1_API.librosAPI.Principal.Principal;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +15,7 @@ public class Proyecto1ApiApplication implements CommandLineRunner {
 	//CommandLineRunner run method
 	@Override
 	public void run(String... args) throws Exception {
-		//System.out.println("Hello world");
+		//System.out.println("Hello world");	//Only test
 		//Principal object
 		Principal principal = new Principal();
 

@@ -6,8 +6,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-//Class with API conexion
-public class ConsumoAPI {
+//Class with API connexion
+public class ConsumeAPI {
 
     public String obtenerDatos(String url){
         HttpClient client = HttpClient.newHttpClient();
@@ -16,6 +16,7 @@ public class ConsumoAPI {
                 .build();
         HttpResponse<String> response = null;
 
+        //Develop an exception to check the errors
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
