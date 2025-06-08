@@ -5,6 +5,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
+/*
+    Save the information of each book.
+    In the author is an array.
+    Ignore the other elements.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record Book(Integer id,
                    String title,
